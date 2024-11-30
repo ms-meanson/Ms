@@ -1,1697 +1,735 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html class="no-js ss-preload" lang="en">
+    <head>
 
-    <!-- 
-    - primary meta tags
-  -->
-    <title>MeanSON Blog</title>
-    <meta name="title" content="MeanSON Blog." />
-    <meta name="description" content="This is a blog  made by MeanSON." />
+        <!--- basic page needs
+    ================================================== -->
+        <meta charset="utf-8">
+        <title>MeanSON-Portfolio</title>
+        <meta name="description" content>
+        <meta name="author" content>
 
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+        <!-- mobile specific metas
+    ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- CSS
+    ================================================== -->
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/styles.css">
 
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+        <!-- favicons
+    ================================================== -->
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+        <link rel="manifest" href="site.webmanifest">
 
-  <body>
-    <!-- 
-    - #HEADER
-  -->
+    </head>
 
-    <header class="header section" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="./assets/images/logo.svg"
-            width="129"
-            height="40"
-            alt="Blogy logo"
-          />
-        </a>
+    <body id="top">
 
-        <nav class="navbar" data-navbar>
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#" class="navbar-link hover:underline" data-nav-link
-                >Home</a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link hover:underline" data-nav-link
-                >Recent Post</a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link hover:underline" data-nav-link
-                >Membership</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <div class="wrapper">
-          <button class="search-btn" aria-label="search" data-search-toggler>
-            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-
-            <span class="span">Search</span>
-          </button>
-
-          <button
-            class="nav-toggle-btn"
-            aria-label="toggle menu"
-            data-nav-toggler
-          >
-            <span class="span one"></span>
-            <span class="span two"></span>
-            <span class="span three"></span>
-          </button>
-
-          <a href="#" class="btn">Join</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- 
-    - #SEARCH BAR
-  -->
-
-    <div class="search-bar" data-search-bar>
-      <div class="input-wrapper">
-        <input
-          type="search"
-          name="search"
-          placeholder="Search"
-          class="input-field"
-        />
-
-        <button
-          class="search-close-btn"
-          aria-label="close search bar"
-          data-search-toggler
-        >
-          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-        </button>
-      </div>
-
-      <p class="search-bar-text">Please enter at least 5 characters</p>
-    </div>
-
-    <div class="overlay" data-overlay data-search-toggler></div>
-
-    <main>
-      <article>
-        <!-- 
-        - #HERO
-      -->
-
-        <section class="section hero" aria-label="home">
-          <div class="container">
-            <h1 class="h1 hero-title">
-              <strong class="strong">Hi, I'm Mean SON.</strong> <br />Web
-              Developer
-            </h1>
-
-            <div class="wrapper">
-              <form action="" class="newsletter-form">
-                <input
-                  type="email"
-                  name="email_address"
-                  placeholder="Your email address"
-                  class="email-field"
-                />
-
-                <button type="submit" class="btn">Subscribe</button>
-              </form>
-
-              <p class="newsletter-text">
-                Get the email newsletter and unlock access to members-only
-                content and updates
-              </p>
+        <!-- # preloader
+    ================================================== -->
+        <div id="preloader">
+            <div id="loader">
             </div>
-          </div>
-        </section>
+        </div>
 
-        <!-- 
-        - #FEATURED POST
-      -->
+        <!-- # page wrap
+    ================================================== -->
+        <div class="s-pagewrap">
 
-        <section class="section featured" aria-label="featured post">
-          <div class="container">
-            <p class="section-subtitle">
-              Get started with our <strong class="strong">best stories</strong>
-            </p>
-
-            <ul class="has-scrollbar">
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-1.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt=""
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Design</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Idea</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Review</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Mean SON - សុន មាន
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      អ្វីដែលខ្ញុំដឹង គឺខ្ញុំមិនចេះអ្វីទាំងអស់ <br />
-                      Have a nice day.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-2.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt=""
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Creative</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">IT</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Welcome to my Blog I will sharing my little bit
-                        knowledge about IT to everyone.
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      I can't know all points of IT some time I may make mistake
-                      or missing you can share your idea and what you know to
-                      correct me.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-3.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt="Perfection has to do with the end product"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-4.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Design</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Creative</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Idea</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        រាល់ថ្ងៃនេះកាត់ចិត្តពីកាហ្វេមិនបានផង
-                        ចឹងគ្មានវិធីអីកាត់ចិត្តពីគេទេ
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      មិន​ថា​អនាគត​នឹង​ទៅ​ជា​យ៉ាង​ណា​ទេ ខ្ញុំ​នឹង​នៅ​ទី​នេះ។ No
-                      matter what the future holds, I will be here.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-4.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt="Everyone has a different life story"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">People</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Story</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        មនុស្សគ្រប់រូបមានរឿងរ៉ាវជីវិតខុសៗគ្នា Everyone has a
-                        different life story
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      ដូច្នេះការឈឺចាប់មិនមែនជាអំពើអាក្រក់បំផុតនោះទេ។ ប៉ុន្តែ
-                      អ្នក​រាល់​គ្នា​មិន​ឃើញ​មាន​មនុស្ស​ច្រើន​យ៉ាង​នេះ​បាន​ប្រសព្វ​គ្នា​ក្នុង​ចំណោម​របស់​ទាំង​នេះ​ទេ
-                      ហើយ​ក៏​មិន​សប្បាយ​ចិត្ត ឬ​ទុក្ខ​ព្រួយ​ដែរ។
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-5.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt="The difference is quality"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Design</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Lifestyle</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Idea</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Building microservices with Dropwizard, MongoDB & Docker
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      This NoSQL database oriented to documents (by documents
-                      like JSON) combines some of the features from relational
-                      databases, easy to use and the multi-platform is the best.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-6.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt=""
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Idea</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Creating</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                        >បញ្ហា​មិន​មែន​ជា​សញ្ញា​បញ្ឈប់​ទេ វា​ជា​ការ​ណែនាំ
-                        Problems are not stop signs, they are guidelines
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      What is the use of so much money? For there are two kinds
-                      of things they were, he made three. And what is the role,
-                      what is the work of wisdom.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 
-        - #RECENT POST
-      -->
-
-        <section class="section recent" aria-label="recent post">
-          <div class="container">
-            <div class="title-wrapper">
-              <h2 class="h2 section-title">
-                See what we’ve <strong class="strong">written lately</strong>
-              </h2>
-
-              <div class="top-author">
-                <ul class="avatar-list">
-                  <li class="avatar-item">
-                    <a
-                      href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-1.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-2.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-3.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-4.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-5.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-                </ul>
-
-                <span class="span">Meet our top authors</span>
-              </div>
+            <div class="circles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
 
-            <ul class="grid-list">
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-1.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="Creating is a privilege but it’s also a gift"
-                      class="img-cover"
-                    />
+            <!-- ## site header 
+        ================================================== -->
+            <header class="s-header">
 
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Lifestyle</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">People</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Review</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Creating is a privilege but it’s also a gift
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      Nullam vel lectus vel velit pellentesque dignissim nec id
-                      magna. Cras molestie ornare quam at semper. Proin a ipsum
-                      ex. Curabitur eu venenatis justo. Nullam felis augue,
-                      imperdiet at sodales a, sollicitudin nec risus.
-                    </p>
-                  </div>
+                <div class="header-mobile">
+                    <span class="mobile-home-link"><a
+                            href="index.html">MeanSON.</a></span>
+                    <a class="mobile-menu-toggle"
+                        href="#0"><span>Menu</span></a>
                 </div>
-              </li>
 
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-2.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="Being unique is better than being perfect"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Design</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Product</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Idea</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Accessibility Tips for Web Developers
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      It's awesome to build sites that are inclusive and
-                      accessible to everyone. There are at least six key areas
-                      of disability we can optimize for: visual, hearing,
-                      mobility, cognition, speech.
-                    </p>
-                  </div>
+                <div class="row wide main-nav-wrap">
+                    <nav class="column lg-12 main-nav">
+                        <ul>
+                            <li><a href="index.html"
+                                    class="home-link">MeanSON.</a></li>
+                            <li class="current"><a href="#intro"
+                                    class="smoothscroll">Intro</a></li>
+                            <li><a href="#about"
+                                    class="smoothscroll">About</a></li>
+                            <li><a href="#works"
+                                    class="smoothscroll">Works</a></li>
+                            <li><a href="#contact" class="smoothscroll">Say
+                                    Hello</a></li>
+                        </ul>
+                    </nav>
                 </div>
-              </li>
 
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-3.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="Now we’re getting somewhere"
-                      class="img-cover"
-                    />
+            </header> <!-- end s-header -->
 
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
+            <!-- ## main content
+        ==================================================- -->
+            <main class="s-content">
+
+                <!-- ### intro
+            ================================================== -->
+                <section id="intro" class="s-intro target-section">
+
+                    <div class="row intro-content wide">
+
+                        <div class="column">
+                            <div class="text-pretitle with-line">
+                                Hello World
+                            </div>
+
+                            <h1 class="text-huge-title">
+                                I am MeanSON, <br>
+                                Web Developer <br>
+                                & Designer <br>
+                            </h1>
+                        </div>
+
+                        <ul class="intro-social">
+                            <li><a href="#0">Facebook</a></li>
+                            <li><a href="#0">Telegram</a></li>
+                            <li><a href="#0">Github</a></li>
+                            <li><a href="#0">Instagram</a></li>
+                        </ul>
+
+                    </div> <!-- end intro content -->
+
+                    <a href="#about" class="intro-scrolldown smoothscroll">
+                        <svg width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd"><path
+                                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" /></svg>
+                    </a>
+
+                </section> <!-- end s-intro -->
+
+                <!-- ### about
+            ================================================== -->
+                <section id="about" class="s-about target-section">
+
+                    <div class="row about-info wide" data-animate-block>
+
+                        <div class="column lg-6 md-12 about-info__pic-block">
+                            <img src="images/mss.jpg"
+                                srcset="images/mss.jpg 1x, images/mss.jpg@2x.jpg 2x"
+                                alt class="about-info__pic" data-animate-el>
+                        </div>
+
+                        <div class="column lg-6 md-12">
+                            <div class="about-info__text">
+
+                                <h2 class="text-pretitle with-line"
+                                    data-animate-el>
+                                    About
+                                </h2>
+                                <p class="attention-getter" data-animate-el>
+                                    A Web Developer specializes in creating and
+                                    maintaining websites and web applications.
+                                    They focus on coding, programming, and
+                                    implementing functionalities using languages
+                                    like HTML, CSS, JavaScript, and backend
+                                    technologies. Web developers ensure the site
+                                    performs well, is secure, and meets client
+                                    requirements.
+                                    <br>
+                                    A Web Designer focuses on the visual and
+                                    user experience aspects of a website. They
+                                    use tools like Figma, Adobe XD, or Photoshop
+                                    to create layouts, color schemes,
+                                    typography, and interactive elements. Their
+                                    goal is to ensure the site is aesthetically
+                                    pleasing and user-friendly.
+                                </p>
+                                <a href="#0" class="btn btn--medium u-fullwidth"
+                                    data-animate-el>Download CV</a>
+
+                            </div>
+                        </div>
+                    </div> <!-- about-info -->
+
+                    <div class="row about-timelines" data-animate-block>
+
+                        <div class="column lg-6 tab-12">
+
+                            <h2 class="text-pretitle" data-animate-el>
+                                Experience
+                            </h2>
+
+                            <div class="timeline" data-animate-el>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">LB Love Asia
+                                            Co., Ltd</h3>
+                                        <h5 class="timeline__meta">Web
+                                            Derveloper &
+                                            Designer</h5>
+                                        <p class="timeline__timeframe">September
+                                            2024 - Present</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>*I do everything I can do there
+                                            Web Develop & IT Support, Design
+                                            (Banner, Poster),
+                                            Repair Printer,
+                                            Manage Facebook Page, TikTok
+                                            .</p>
+                                        <p>*Website: <br>
+                                            www.loveasiare.com <br>
+                                            www.loveasiatours.com <br>
+                                            www.laplageresto.com <br>
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4
+                                            class="timeline__title">SiemReap
+                                            GoldenKids School</h4>
+                                        <h5 class="timeline__meta">IT Support
+                                            & Designer</h5>
+                                        <p class="timeline__timeframe">2022 -
+                                            2023</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>*I do everything I can do there
+                                            Web Develop & IT Support, Design
+                                            (Banner, Poster),
+                                            Repair Printer,
+                                            Manage Facebook Page, TikTok
+                                            .</p>
+                                    </div>
+                                </div>
+
+                            </div> <!-- end timeline -->
+
+                        </div> <!-- end column -->
+
+                        <div class="column lg-6 tab-12">
+
+                            <h2 class="text-pretitle" data-animate-el>
+                                Education
+                            </h2>
+
+                            <div class="timeline" data-animate-el>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">University
+                                            of South-East Asia, Siem Reap -
+                                            B.Sc. IT </h3>
+                                        <h5 class="timeline__meta">Information
+                                            technology (IT) </h5>
+                                        <p class="timeline__timeframe">2020 -
+                                            2024</p>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>Concentrated on: <br>
+                                            - Computer Programming <br>
+                                            - Computer Networking <br>
+                                            - Web Development <br>
+                                        </p>
+                                        <p>*Products: <br>
+                                            www.meansonit.store <br>
+                                        </p>
+                                        <p>*Thisis: (Team) <br>
+                                            www.siemreapgoldenkidsschool.com
+                                            <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__block">
+                                    <div class="timeline__bullet"></div>
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">Graduated
+                                            from:
+                                        </h4>
+                                        <h5 class="timeline__meta">Rajabo High
+                                            School (Diploma), Siem Reap</h5>
+                                        <p class="timeline__timeframe">2017 –
+                                            2020
+                                        </p>
+                                    </div>
+                                    <!-- <div class="timeline__desc">
+                                        <p>Lorem ipsum Occaecat do esse ex et
+                                            dolor culpa nisi ex in magna
+                                            consectetur nisi cupidatat laboris
+                                            esse eiusmod deserunt aute do quis
+                                            velit esse sed Ut proident cupidatat
+                                            nulla esse cillum laborum occaecat
+                                            nostrud sit dolor incididunt amet
+                                            est occaecat nisi.</p>
+                                    </div> -->
+                                </div>
+
+                            </div> <!-- end timeline -->
+
+                        </div> <!-- end column -->
+
+                    </div> <!-- end about-timelines -->
+
+                </section> <!-- end s-about -->
+
+                <!-- ### works
+            ================================================== -->
+                <section id="works" class="s-works target-section">
+
+                    <div class="row works-portfolio">
+
+                        <div class="column lg-12" data-animate-block>
+
+                            <h2 class="text-pretitle" data-animate-el>
+                                Recent Works
+                            </h2>
+
+                            <ul
+                                class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                                <li class="folio-list__item column"
+                                    data-animate-el>
+                                    <a class="folio-list__item-link"
+                                        href="#modal-01">
+                                        <div class="folio-list__item-pic">
+                                            <img src="images/portfolio/fuji.jpg"
+                                                srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x"
+                                                alt>
+                                        </div>
+
+                                        <div class="folio-list__item-text">
+                                            <div class="folio-list__item-cat">
+                                                Website
+                                            </div>
+                                            <div class="folio-list__item-title">
+                                                Retro Camera.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="folio-list__proj-link" href="#"
+                                        title="project link">
+                                        <svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </li> <!--end folio-list__item -->
+
+                                <li class="folio-list__item column"
+                                    data-animate-el>
+                                    <a class="folio-list__item-link"
+                                        href="#modal-02">
+                                        <div class="folio-list__item-pic">
+                                            <img src="images/portfolio/lamp.jpg"
+                                                srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x"
+                                                alt>
+                                        </div>
+
+                                        <div class="folio-list__item-text">
+                                            <div class="folio-list__item-cat">
+                                                Product Design
+                                            </div>
+                                            <div class="folio-list__item-title">
+                                                The White Lamp.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="folio-list__proj-link" href="#"
+                                        title="project link">
+                                        <svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </li> <!--end folio-list__item -->
+
+                                <li class="folio-list__item column"
+                                    data-animate-el>
+                                    <a class="folio-list__item-link"
+                                        href="#modal-03">
+                                        <div class="folio-list__item-pic">
+                                            <img
+                                                src="images/portfolio/rucksack.jpg"
+                                                srcset="images/portfolio/rucksack.jpg 1x, images/portfolio/rucksack@2x.jpg 2x"
+                                                alt>
+                                        </div>
+
+                                        <div class="folio-list__item-text">
+                                            <div class="folio-list__item-cat">
+                                                Branding
+                                            </div>
+                                            <div class="folio-list__item-title">
+                                                Rucksuck.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="folio-list__proj-link" href="#"
+                                        title="project link">
+                                        <svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </li> <!--end folio-list__item -->
+
+                                <li class="folio-list__item column"
+                                    data-animate-el>
+                                    <a class="folio-list__item-link"
+                                        href="#modal-04">
+                                        <div class="folio-list__item-pic">
+                                            <img
+                                                src="images/portfolio/skaterboy.jpg"
+                                                srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x"
+                                                alt>
+                                        </div>
+
+                                        <div class="folio-list__item-text">
+                                            <div class="folio-list__item-cat">
+                                                Website
+                                            </div>
+                                            <div class="folio-list__item-title">
+                                                Since Day One.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="folio-list__proj-link" href="#"
+                                        title="project link">
+                                        <svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </li> <!--end folio-list__item -->
+
+                                <li class="folio-list__item column"
+                                    data-animate-el>
+                                    <a class="folio-list__item-link"
+                                        href="#modal-05">
+                                        <div class="folio-list__item-pic">
+                                            <img
+                                                src="images/portfolio/sanddunes.jpg"
+                                                srcset="images/portfolio/sanddunes.jpg 1x, images/portfolio/sanddunes@2x.jpg 2x"
+                                                alt>
+                                        </div>
+
+                                        <div class="folio-list__item-text">
+                                            <div class="folio-list__item-cat">
+                                                Illustration
+                                            </div>
+                                            <div class="folio-list__item-title">
+                                                Sand Dunes.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="folio-list__proj-link" href="#"
+                                        title="project link">
+                                        <svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </li> <!--end folio-list__item -->
+
+                                <li class="folio-list__item column"
+                                    data-animate-el>
+                                    <a class="folio-list__item-link"
+                                        href="#modal-06">
+                                        <div class="folio-list__item-pic">
+                                            <img
+                                                src="images/portfolio/minimalismo.jpg"
+                                                srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x"
+                                                alt>
+                                        </div>
+
+                                        <div class="folio-list__item-text">
+                                            <div class="folio-list__item-cat">
+                                                Branding
+                                            </div>
+                                            <div class="folio-list__item-title">
+                                                Minimalismo.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="folio-list__proj-link" href="#"
+                                        title="project link">
+                                        <svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                                fill="currentColor"
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </li> <!--end folio-list__item -->
+
+                            </ul> <!-- end folio-list -->
+
+                        </div> <!-- end column -->
+
+                        <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+                        <div id="modal-01" hidden>
+                            <div class="modal-popup">
+                                <img src="images/portfolio/gallery/g-fuji.jpg"
+                                    alt>
+
+                                <div class="modal-popup__desc">
+                                    <h5>Retro Camera</h5>
+                                    <p>Odio soluta enim quos sit asperiores
+                                        rerum rerum repudiandae cum. Vel
+                                        voluptatem alias qui assumenda iure et
+                                        expedita voluptatem. Ratione officiis
+                                        quae.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Branding</li>
+                                        <li>Product Design</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://www.behance.net/"
+                                    class="modal-popup__details">Project
+                                    link</a>
+                            </div>
+                        </div> <!-- end modal -->
+
+                        <div id="modal-02" hidden>
+                            <div class="modal-popup">
+                                <img src="images/portfolio/gallery/g-lamp.jpg"
+                                    alt>
+
+                                <div class="modal-popup__desc">
+                                    <h5>The White Lamp</h5>
+                                    <p>Proin gravida nibh vel velit auctor
+                                        aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat
+                                        ipsum, nec sagittis sem nibh id
+                                        elit.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Branding</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://www.behance.net/"
+                                    class="modal-popup__details">Project
+                                    link</a>
+                            </div>
+                        </div> <!-- end modal -->
+
+                        <div id="modal-03" hidden>
+                            <div class="modal-popup">
+                                <img
+                                    src="images/portfolio/gallery/g-rucksack.jpg"
+                                    alt>
+
+                                <div class="modal-popup__desc">
+                                    <h5>Rucksuck</h5>
+                                    <p>Exercitationem reprehenderit quod
+                                        explicabo consequatur aliquid ut magni
+                                        ut. Deleniti quo corrupti illum velit
+                                        eveniet ratione necessitatibus ipsam
+                                        mollitia.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Product Design</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://www.behance.net/"
+                                    class="modal-popup__details">Project
+                                    link</a>
+                            </div>
+                        </div> <!-- end modal -->
+
+                        <div id="modal-04" hidden>
+                            <div class="modal-popup">
+                                <img
+                                    src="images/portfolio/gallery/g-skaterboy.jpg"
+                                    alt>
+
+                                <div class="modal-popup__desc">
+                                    <h5>Since Day One</h5>
+                                    <p>Dolores velit qui quos nobis. Aliquam
+                                        delectus voluptas quos possimus non
+                                        voluptatem voluptas voluptas. Est
+                                        doloribus eligendi porro doloribus
+                                        voluptatum.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Website</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://www.behance.net/"
+                                    class="modal-popup__details">Project
+                                    link</a>
+                            </div>
+                        </div> <!-- end modal -->
+
+                        <div id="modal-05" hidden>
+                            <div class="modal-popup">
+
+                                <img
+                                    src="images/portfolio/gallery/g-sanddunes.jpg"
+                                    alt>
+
+                                <div class="modal-popup__desc">
+                                    <h5>Sand Dunes</h5>
+                                    <p>Proin gravida nibh vel velit auctor
+                                        aliquet. Aenean sollicitudin, lorem quis
+                                        bibendum auctor, nisi elit consequat
+                                        ipsum, nec sagittis sem nibh id
+                                        elit.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Illustration</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://www.behance.net/"
+                                    class="modal-popup__details">Project
+                                    link</a>
+                            </div>
+                        </div> <!-- end modal -->
+
+                        <div id="modal-06" hidden>
+                            <div class="modal-popup">
+                                <img
+                                    src="images/portfolio/gallery/g-minimalismo.jpg"
+                                    alt>
+
+                                <div class="modal-popup__desc">
+                                    <h5>Minimalismo</h5>
+                                    <p>Quisquam vel libero consequuntur autem
+                                        voluptas. Qui aut vero. Omnis fugit
+                                        mollitia cupiditate voluptas. Aenean
+                                        sollicitudin, lorem quis bibendum
+                                        auctor.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Branding</li>
+                                        <li>Product Design</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://www.behance.net/"
+                                    class="modal-popup__details">Project
+                                    link</a>
+                            </div>
+                        </div> <!-- end modal -->
+
+                    </div> <!-- end works-portfolio -->
+
+                </section> <!-- end s-works -->
+
+                <!-- ### contact
+            ================================================== -->
+                <section id="contact" class="s-contact target-section">
+
+                    <div class="row contact-top">
+                        <div class="column lg-12">
+                            <h2 class="text-pretitle">
+                                Get In Touch
+                            </h2>
+
+                            <p class="h1">
+                                I love to hear from you.
+                                Whether you have a question or just
+                                want to chat about design, tech & art — shoot me
+                                a message.
+                            </p>
+                        </div>
+                    </div> <!-- end contact-top -->
+
+                    <div class="row contact-bottom">
+                        <div
+                            class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                            <h3 class="text-pretitle">Reach me at</h3>
+                            <p class="contact-links">
+                                <a href="mailto:info@meansonit.store"
+                                    class="mailtoui">info@meansonit.store</a>
+                                <br>
+                                <a href="tel:+1975432345">+197 543 2345</a>
+                            </p>
+                        </div>
+                        <div
+                            class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                            <h3 class="text-pretitle">Social</h3>
+                            <ul class="contact-social">
+                                <li><a href="#0">Facebook</a></li>
+                                <li><a href="#0">Telegram</a></li>
+                                <li><a href="#0">Instagram</a></li>
+                                <li><a href="#0">Github</a></li>
+                            </ul>
+                        </div>
+                        <div class="column lg-4 md-12 contact-block">
+                            <a href="mailto:info@meansonit.store"
+                                class="mailtoui btn btn--medium u-fullwidth contact-btn">Say
+                                Hello.</a>
+                        </div>
+                    </div> <!-- end contact-bottom -->
+
+                </section> <!-- end contact -->
+
+            </main> <!-- end s-content -->
+
+            <!-- ## footer
+        ================================================== -->
+            <footer class="s-footer">
+
+                <div class="row">
+                    <div class="column ss-copyright">
+                        <span>© Copyright MS 2023</span>
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill-rule="evenodd"
+                                clip-rule="evenodd"><path
+                                    d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" /></svg>
                         </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Idea</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Product</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Review</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Dynamically Securing Databases using Hashicorp Vault
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      Nowadays, it's hard to profoundly talk about security in
-                      the IT industry, since it has to be considered on so many
-                      different levels: from securing code chunks, securing.
-                    </p>
-                  </div>
+                    </div>
                 </div>
-              </li>
 
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-4.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="The trick to getting more done is to have the freedom to roam around"
-                      class="img-cover"
-                    />
+            </footer> <!-- end s-footer -->
 
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
+        </div> <!-- end -s-pagewrap -->
 
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">Lifestyle</a>
-                      </li>
+        <!-- Java Script
+    ================================================== -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-                      <li>
-                        <a href="#" class="card-tag">Design</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Don't Develop Just for Yourself - A Developer's
-                        Checklist to Accessibility
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      We, as developers, tend to develop sites unconsciously for
-                      people like ourselves. If we don't actively pay attention,
-                      the sites are often accessible only for certain types of
-                      people:.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-5.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="Every day, in every city and town across the country"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">People</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Story</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Lifestyle</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Building a Restful CRUD API with Node JS, Express, and
-                        MongoDB
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      Application Programming Interface is the abbreviation for
-                      API. An API is a software interface that enables two apps
-                      to communicate with one another. In other words, an API is
-                      a.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-6.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="Your voice, your mind, your story, your vision"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">People</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Review</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">Story</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Monitoring Performance with the PageSpeed Insights API
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      The PageSpeed Insights API provides free access to
-                      performance monitoring for web pages and returns data with
-                      suggestions for how to improve. The V5 API includes.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <button class="btn">Load more</button>
-          </div>
-        </section>
-
-        <!-- 
-        - #RECOMMENDED POST
-      -->
-
-        <section class="section recommended" aria-label="recommended post">
-          <div class="container">
-            <p class="section-subtitle">
-              <strong class="strong">Latest Blog Post</strong>
-            </p>
-
-            <ul class="grid-list">
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-1.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="The trick to getting more done is to have the freedom to roam around "
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        The trick to getting more done is to have the freedom to
-                        roam around
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-2.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="Every day, in every city and town across the country "
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Every day, in every city and town across the country
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-3.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="I work best when my space is filled with inspiration "
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        I work best when my space is filled with inspiration
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-4.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="I have my own definition of minimalism "
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-4.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        I have my own definition of minimalism
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-5.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="Change your look and your attitude "
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        Change your look and your attitude
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-6.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="The difference is quality "
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a
-                        href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                        class="card-title hover:underline"
-                      >
-                        The difference is quality
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 
-        - #NEWSLETTER
-      -->
-
-        <section class="section newsletter">
-          <h2 class="h2 section-title">
-            Subscribe to <strong class="strong">new posts</strong>
-          </h2>
-
-          <form action="" class="newsletter-form">
-            <input
-              type="email"
-              name="email_address"
-              placeholder="Your email address"
-              required
-              class="email-field"
-            />
-
-            <button type="submit" class="btn">Subscribe</button>
-          </form>
-        </section>
-      </article>
-    </main>
-
-    <!-- 
-    - #FOOTER
-  -->
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top section">
-          <div class="footer-brand">
-            <a href="#" class="logo">
-              <img
-                src="./assets/images/logo.svg"
-                width="129"
-                height="40"
-                alt="Blogy logo"
-              />
-            </a>
-
-            <p class="footer-text">
-              The strategies for learning new skills <br />
-              1. Set clear goals <br />
-              2. Adopt a growth mindset <br />
-              3. Use active learning strategies <br />
-              4. Use different learning mediums <br />
-              5. Learn from someone with more experience <br />
-              6. Practice <br />
-              7. Take frequent breaks <br />
-              Have a nice day.
-            </p>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <p class="h5">Social</p>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="logo-facebook"></ion-icon>
-
-              <a
-                href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-                class="footer-link hover:underline"
-                >Facebook</a
-              >
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="logo-youtube"></ion-icon>
-
-              <a
-                href="https://www.youtube.com/channel/UCP6Ss4FmZFILO8UJVY1B0Jw"
-                class="footer-link hover:underline"
-                >Youtube</a
-              >
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="navigate-circle-outline"></ion-icon>
-
-              <a href="#" class="footer-link hover:underline">Telegram</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="h5">About</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Contact</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">404</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Privacy Policy</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="h5">Features</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline"
-                >Upcoming Events</a
-              >
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Blog & News</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Features</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">FAQ Question</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="h5">Membership</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Account</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Membership</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link hover:underline">Subscribe</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="section footer-bottom">
-          <p class="copyright">
-            &copy; Blog 2024. Published by
-            <a
-              href="https://web.facebook.com/SONMean.IT?_rdc=1&_rdr"
-              class="copyright-link hover:underline"
-              >MeanSON</a
-            >.
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js" defer></script>
-
-    <!-- 
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    </body>
 </html>
